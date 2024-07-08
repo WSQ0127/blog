@@ -4,6 +4,39 @@
   
     
     <entry>
+      <title>线段树</title>
+      <link href="/posts/48555/"/>
+      <url>/posts/48555/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h2><p><del>我承认这个封面的<code>线段树</code>有点过于抽象，但是真的没有别的办法乐。</del></p><p>先引用一个大佬说的一句话：</p><blockquote><p>如果你在考提高组前一天还在问这个问题，那么你会与一等奖失之交臂；如果你还在冲击普及组一等奖，那么这篇博客会浪费你人生中宝贵的5~20分钟。</p></blockquote><p>显而易见，线段树是一个 OIer 从萌新过渡到正式 OIer 选手的标志性算法。</p><p>然而事实上，对于一个正式的 OIer 选手，线段树更应该是一个工具，所以……</p><p><strong>线段树是世界上最好的数据结构！！！（超大声</strong></p><p>线段树可以 $O(\log n)$ 的实现区间和，区间乘，区间最值，区间修改等操作，在很多题中都可以以略逊于正解的解法过掉。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> OI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OI </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 数据结构 </tag>
+            
+            <tag> 提高组 </tag>
+            
+            <tag> 线段树 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>树状数组</title>
       <link href="/posts/59a0de58/"/>
       <url>/posts/59a0de58/</url>
