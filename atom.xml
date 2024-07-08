@@ -6,7 +6,7 @@
   <link href="http://blog.wsq127.top/atom.xml" rel="self"/>
   
   <link href="http://blog.wsq127.top/"/>
-  <updated>2024-07-08T15:50:08.230Z</updated>
+  <updated>2024-07-08T15:53:42.345Z</updated>
   <id>http://blog.wsq127.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://blog.wsq127.top/posts/48555/"/>
     <id>http://blog.wsq127.top/posts/48555/</id>
     <published>2024-07-08T14:59:55.147Z</published>
-    <updated>2024-07-08T15:50:08.230Z</updated>
+    <updated>2024-07-08T15:53:42.345Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h2><p><del>我承认这个封面的<code>线段树</code>有点过于抽象，但是真的没有别的办法乐。</del></p><p>先引用一个大佬说的一句话：</p><blockquote><p>如果你在考提高组前一天还在问这个问题，那么你会与一等奖失之交臂；如果你还在冲击普及组一等奖，那么这篇博客会浪费你人生中宝贵的5~20分钟。</p></blockquote><p>显而易见，线段树是一个 OIer 从萌新过渡到正式 OIer 选手的标志性算法。</p><p>然而事实上，对于一个正式的 OIer 选手，线段树更应该是一个工具，所以……</p><p><strong>线段树是世界上最好的数据结构！！！（超大声</strong></p><p>线段树可以 $O(\log n)$ 的实现区间和，区间乘，区间最值，区间修改等操作，在很多题中都可以以略逊于正解的解法过掉。</p><p>（（先鸽着（（逃</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h2><p><del>我承认这个封面的<code>线段树</code>有点过于抽象，但是真的没有别的办法乐。</del></p><p>先引用一个大佬说的一句话：</p><blockquote><p>什么是线段树？<br>如果你在考提高组前一天还在问这个问题，那么你会与一等奖失之交臂；如果你还在冲击普及组一等奖，那么这篇博客会浪费你人生中宝贵的5~20分钟。</p></blockquote><p>显而易见，线段树是一个 OIer 从萌新过渡到正式 OIer 选手的标志性算法。</p><p>然而事实上，对于一个正式的 OIer 选手，线段树更应该是一个工具，所以……</p><p><strong>线段树是世界上最好的数据结构！！！（超大声</strong></p><p>线段树可以 $O(\log n)$ 的实现区间和，区间乘，区间最值，区间修改等操作，在很多题中都可以以略逊于正解的解法过掉。</p><p>（（先鸽着（（逃</p>]]></content>
     
     
       
@@ -43,9 +43,9 @@
     
     <category term="数据结构" scheme="http://blog.wsq127.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
-    
     <category term="线段树" scheme="http://blog.wsq127.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
+    
+    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
     
   </entry>
   
@@ -76,9 +76,9 @@
     
     <category term="数据结构" scheme="http://blog.wsq127.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
-    <category term="树状数组" scheme="http://blog.wsq127.top/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
-    
     <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
+    
+    <category term="树状数组" scheme="http://blog.wsq127.top/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
   </entry>
   
