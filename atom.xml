@@ -41,11 +41,11 @@
     
     <category term="C++" scheme="http://blog.wsq127.top/tags/C/"/>
     
-    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
-    
     <category term="数据结构" scheme="http://blog.wsq127.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="分块" scheme="http://blog.wsq127.top/tags/%E5%88%86%E5%9D%97/"/>
+    
+    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
     
   </entry>
   
@@ -66,13 +66,13 @@
     
     <category term="C++" scheme="http://blog.wsq127.top/tags/C/"/>
     
+    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
+    
     <category term="算法" scheme="http://blog.wsq127.top/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="图论" scheme="http://blog.wsq127.top/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="Tarjan" scheme="http://blog.wsq127.top/tags/Tarjan/"/>
-    
-    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
     
   </entry>
   
@@ -101,9 +101,9 @@
     
     <category term="C++" scheme="http://blog.wsq127.top/tags/C/"/>
     
-    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
-    
     <category term="数据结构" scheme="http://blog.wsq127.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
     
     <category term="线段树" scheme="http://blog.wsq127.top/tags/%E7%BA%BF%E6%AE%B5%E6%A0%91/"/>
     
@@ -134,9 +134,9 @@
     
     <category term="C++" scheme="http://blog.wsq127.top/tags/C/"/>
     
-    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
-    
     <category term="数据结构" scheme="http://blog.wsq127.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="提高组" scheme="http://blog.wsq127.top/tags/%E6%8F%90%E9%AB%98%E7%BB%84/"/>
     
     <category term="树状数组" scheme="http://blog.wsq127.top/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
     
