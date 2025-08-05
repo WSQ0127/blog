@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>7.23 模拟赛 T6 证明</title>
+      <link href="/posts/49622/"/>
+      <url>/posts/49622/</url>
+      
+        <content type="html"><![CDATA[<h2 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h2><p>不写这一部分感觉难受所以请输入文字。<br>学长让我写我拖了半个月说是，然而感觉这场比赛是两千年前打得了。</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="题目大意："><a href="#题目大意：" class="headerlink" title="题目大意："></a>题目大意：</h3><blockquote><p>定义 $f_i$ 表示斐波那契数列第 $i$ 项，求对于任意一个 $x$，是否存在 $i,;j;(i &lt; j)$，使得 $f_x&#x3D;f_i^2+f_j^2$。如果存在，请输出 $i$ 最小的一组。</p></blockquote><hr><h3 id="引理"><a href="#引理" class="headerlink" title="引理"></a>引理</h3><blockquote><p>引理 1：<br>$f_i &#x3D; f_{i-1} + f_{i-2}$（请输入文字）</p></blockquote><blockquote><p>引理 2：<br>$f_{m + n} &#x3D; f_mf_{n+1}+f_{m-1}f_n$</p></blockquote><blockquote><p>引理 3：<br> $f_{2n} &#x3D; f_{n}^2 + 2f_n f_{n-1}$。</p></blockquote><hr><h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>不妨分类讨论。</p><h4 id="对于奇数"><a href="#对于奇数" class="headerlink" title="对于奇数"></a>对于奇数</h4><p>不妨将 $x$ 表示为 $2k + 1$，由引理 2 可知：<br>$$<br>\begin{align*}<br>f_{2k+1} &amp;&#x3D; f_{k}f_{k+2} + f_{k-1}f_{k+1} \<br>         &amp;&#x3D; f_k(f_k+f_{k+1}) + f_{k-1}f_{k+1} \<br>         &amp;&#x3D; f_k^2 + f_kf_{k+1} + f_{k-1}f_{k+1} \<br>         &amp;&#x3D; f_k^2 + f_{k+1}(f_k+f_{k-1}) \<br>         &amp;&#x3D; f_k^2 + f_{k+1}^2<br>\end{align*}<br>$$<br>所以，当 $x$ 是奇数时，$f_x &#x3D; f_k^2 + f_{k+1}^2$ 是一个解，其中 $k &#x3D; \lfloor\frac{x}{2}\rfloor$。存在性证毕。</p><p>接下来我们要证明这个东西的唯一性。<br>我们考虑将 $k$ 变大而 $k+1$ 变小，或者反过来。<br>我们有 $f_{k+2}^2 - f_{k+1}^2 &gt; f_{k+1}^2$。<br>这个结论可以这样证明：<br>$$<br>\begin{align*}<br>f_{k+2}^2 - f_{k+1}^2 &amp;&#x3D; (f_{k+2}-f_{k+1})(f_{k+2}+f_{k+1}) \<br>                       &amp;&#x3D; f_k (f_{k+3})<br>\end{align*}<br>$$<br>因为 $f_k, f_{k+3}&gt;0$，所以 $f_k(f_{k+3})&gt;0$。并且 $f_{k+1}^2 &lt; f_{k+2}^2 - f_{k+1}^2$。<br>所以 $f_{k+1}^2$ 的增大量大于 $f_{k}^{2}$，所以不会存在一个比 $k+1$ 更大的数满足条件。<br>故 $f_n&#x3D;f_{\lfloor\frac{n}{2}\rfloor}^2+f_{\lfloor\frac{n}{2}\rfloor+1}^2$ 为唯一解。</p><hr><h4 id="对于偶数"><a href="#对于偶数" class="headerlink" title="对于偶数"></a>对于偶数</h4><p>不妨将 $x$ 表示为 $2k$。<br>由引理 3 可知：<br>$f_{2k} &#x3D; f_{k}^2 + 2f_k f_{k-1}$。<br>我们现在已经构造出了一个 $f_{k}^2$，则需要考虑 $2f_{k}f_{k-1}$ 是否为某一个斐波那契数的平方。<br>根据斐波那契数列的性质，对于 $n&gt;3$，我们有 $f_n &lt; 2f_{n-1}$ 和 $f_{n+1} &gt; 2f_{n-1}$。<br>因此 $2f_{k}f_{k-1}$ 不可能为某一个斐波那契数的平方。  </p><p>接下来我们考虑 $f_{2k} &#x3D; f_{k’}^2+f_j^2$ 是否可能存在。<br>根据引理 3，我们有 $f_{2k} &#x3D; f_k^2 + 2f_k f_{k-1}$。<br>由于 $f_k, f_{k-1} &gt; 0$，所以 $f_{2k} &gt; f_k^2$。<br>并且，我们有 $f_{2k} &lt; f_{k+1}^2$。<br>证明如下：<br>$$<br>\begin{align*}<br>f_{k+1}^2 - f_{2k} &amp;&#x3D; f_{k+1}^2 - (f_k^2 + 2f_k f_{k-1}) \<br>                   &amp;&#x3D; (f_k+f_{k-1})^2 - f_k^2 - 2f_k f_{k-1} \<br>                   &amp;&#x3D; f_k^2+2f_kf_{k-1}+f_{k-1}^2 - f_k^2 - 2f_k f_{k-1} \<br>                   &amp;&#x3D; f_{k-1}^2 &gt; 0<br>\end{align*}<br>$$<br>所以 $f_k^2 &lt; f_{2k} &lt; f_{k+1}^2$。<br>这意味着 $f_{2k}$ 夹在两个相邻斐波那契数的平方之间。<br>对于任意一个正整数 $k’$，如果 $k’ \ge k+1$，那么 $f_{k’}^2 \ge f_{k+1}^2 &gt; f_{2k}$。所以 $f_{k’}^2$ 加上任何正数都会大于 $f_{2k}$。<br>如果 $k’ &lt; k$，我们记 $\Delta&#x3D;f_{2k}-f_{k’}^2$。<br>因为 $f_{k’}^2 &lt; f_k^2$，所以 $\Delta &gt; f_{2k}-f_k^2 &#x3D; 2f_k f_{k-1}$。<br>而 $f_k^2 &lt; \Delta &lt; f_{k+1}^2$。<br>所以 $\Delta$ 夹在两个相邻斐波那契数的平方之间，因此 $\Delta$ 无法被表示为一个斐波那契数的平方。<br>故，当 $x$ 为偶数时，不存在满足条件的解。</p><p>综上，有<br>当 $x$ 为偶数时，不存在两个数 $i$ 和 $j$ 使得它们满足 $i&gt;j$ 且 $f_{x}&#x3D;f_{i}^{2}+f_{j}^{2}$。<br>当 $x$ 为奇数时，当且仅当 $i&#x3D;\lfloor\frac{x}{2}\rfloor+1$, $j&#x3D;\lfloor\frac{x}{2}\rfloor$ 时满足 $i&gt;j$ 且 $f_{x}&#x3D;f_{i}^{2}+f_{j}^{2}$。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> OI </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OI </tag>
+            
+            <tag> C++ </tag>
+            
+            <tag> 数论 </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 模拟赛 </tag>
+            
+            <tag> 提高组 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分块</title>
       <link href="/posts/44007/"/>
       <url>/posts/44007/</url>
@@ -57,13 +92,13 @@
             
             <tag> C++ </tag>
             
+            <tag> 提高组 </tag>
+            
             <tag> 算法 </tag>
             
             <tag> 图论 </tag>
             
             <tag> Tarjan </tag>
-            
-            <tag> 提高组 </tag>
             
         </tags>
       
